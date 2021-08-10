@@ -399,7 +399,7 @@ footer a img {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 800px) {
   /* NAVBAR */
   .nav-menu {
     position: fixed;
