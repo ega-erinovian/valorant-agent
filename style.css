@@ -404,7 +404,7 @@ footer a img {
   .nav-menu {
     position: fixed;
     left: 0;
-    top: -100%;
+    top: -100vh;
     flex-direction: column;
     justify-content: center;
     background-color: #ff4655;
