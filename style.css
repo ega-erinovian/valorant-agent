@@ -382,7 +382,7 @@ footer a img {
   width: 100px;
 }
 
-@media screen and (min-width: 1920px) {
+@media all and (min-width: 1920px) {
   .header-text-container {
     position: absolute;
     color: #fff;
@@ -399,7 +399,7 @@ footer a img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   /* NAVBAR */
   .nav-menu {
     position: fixed;
