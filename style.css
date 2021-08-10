@@ -398,6 +398,9 @@ footer a img {
 }
 
 @media screen and (max-width: 768px) {
+  html, body{
+    overflow-x: hidden !important;
+  }
   /* NAVBAR */
   .nav-menu {
     position: fixed;
