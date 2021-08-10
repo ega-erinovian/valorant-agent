@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   background-color: #fafaf9;
   background-image: url("./img/bg.png");
   background-attachment: fixed;
