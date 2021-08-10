@@ -39,6 +39,10 @@ hr {
   border: 5px solid #ff4655;
 }
 
+img {
+  overflow-x: hidden;
+}
+
 /* NAVBAR */
 
 .navbar {
