@@ -8,7 +8,7 @@
 
 html,
 body {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 html {
@@ -18,7 +18,6 @@ html {
 
 body {
   width: 100vw;
-  max-width: 100vw;
   background-color: #fafaf9;
   background-image: url("./img/bg.png");
   background-attachment: fixed;
@@ -401,9 +400,6 @@ footer a img {
 }
 
 @media screen and (max-width: 768px) {
-  html, body{
-    overflow-x: hidden !important;
-  }
   /* NAVBAR */
   .nav-menu {
     position: fixed;
