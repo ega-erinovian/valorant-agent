@@ -381,12 +381,12 @@ sr.reveal(".desc-container", {});
 
 // Abilities
 sr.reveal(".skill-container h1", { origin: "left" });
-sr.reveal(abilitiesBtn, { origin: "left" });
+sr.reveal(".abilities-ico", { origin: "left" });
 sr.reveal(".abilities-text", { origin: "left" });
 
 // Agents Reveal
 sr.reveal(".other-agents h1", { origin: "left" });
-sr.reveal(agentPict, { delay: 500 });
+sr.reveal(".agent", { delay: 500 });
 sr.reveal(".play-now", {});
 
 // Add event listener to hamburger bar

@@ -6,13 +6,17 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
 }
 
 body {
-  overflow-x: hidden;
   background-color: #fafaf9;
   background-image: url("./img/bg.png");
   background-attachment: fixed;
@@ -171,9 +175,8 @@ header {
   width: 100px;
   height: 100px;
   cursor: pointer;
-  background-color: transparent;
   border: 1px solid #0f1923;
-  transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.5s;
 }
 
 .abilities-ico img {
@@ -196,6 +199,7 @@ header {
   transform: translateY(-10px);
   box-shadow: 10px 10px 0px 0px #0f1923;
 }
+
 .abilities-ico.animate img {
   filter: brightness(1);
 }
@@ -215,7 +219,6 @@ header {
   font-weight: 100;
   width: 60%;
   text-align: justify;
-  transition: all ease-in-out 0.5s;
 }
 
 .abilities-text h2 span {
@@ -309,13 +312,20 @@ header {
   cursor: pointer;
 }
 
+.play-now button:active {
+  letter-spacing: 5px;
+  background-position: left;
+  box-shadow: 10px 10px 0px 0px #0f1923;
+  cursor: pointer;
+}
+
 /* FOOTER */
 footer {
   display: flex;
   flex-direction: column;
   background-color: #0f1923;
   width: 100%;
-  height: 500px;
+  height: 65vh;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(#0000002d 90%, #ff283a48), url("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltbded518020183769/5eb26f5389bac8148a8006cc/agent-background-generic.JPG");
@@ -383,12 +393,7 @@ footer a img {
   }
 }
 
-@media screen and (max-width: 800px) {
-  body {
-    overflow-x: hidden;
-    background-origin: border-box;
-    background-position: 70%;
-  }
+@media screen and (max-width: 768px) {
   /* NAVBAR */
   .nav-menu {
     position: fixed;
@@ -474,12 +479,13 @@ footer a img {
 
   .header-text-container h2 {
     color: #fff;
+    font-size: 6vw;
     background-color: #ff4655;
     padding-left: 6px;
   }
 
   .header-text-container h2 img {
-    width: 3.5rem;
+    width: 5vw;
   }
 
   /* SPECIAL ABILITIES */
@@ -498,21 +504,19 @@ footer a img {
     font-size: 1.5rem;
     width: 100%;
     padding: 0;
-    text-align: justify;
-    transition: all ease-in-out 0.5s;
   }
 
   .abilities-ico img {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    padding: 5px;
   }
 
   .abilities-ico:hover {
-    box-shadow: 7px 7px 0px 0px #0f1923;
+    box-shadow: none;
   }
 
   .abilities-ico.animate {
-    box-shadow: 7px 7px 0px 0px #0f1923;
+    box-shadow: none;
   }
 
   .abilities-container {
@@ -524,7 +528,6 @@ footer a img {
   .abilities-vid {
     width: 100%;
     box-shadow: 7px 7px 0px 0px #ff4655;
-    transition: all ease-in-out 0.2s;
   }
 
   .abilities-vid:hover {
@@ -537,15 +540,28 @@ footer a img {
   .other-agents {
     height: fit-content;
     width: 100%;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .other-agents h1 {
     margin-bottom: 50px;
-    font-size: 4rem;
+    font-size: 5rem;
+    padding-left: 20px;
   }
 
   .other-agents .agents-container {
-    grid-template-columns: repeat(3, 165px);
+    width: 100%;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(8, 25%);
+  }
+
+  .other-agents .agents-container img {
+    width: 95%;
+  }
+
+  footer {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
   }
 }
