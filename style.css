@@ -14,6 +14,7 @@ body {
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +23,6 @@ body {
   background-image: url("./img/bg.png");
   background-attachment: fixed;
   background-size: cover;
-  scroll-behavior: smooth;
 }
 
 li {
@@ -253,6 +253,7 @@ header {
   height: fit-content;
   width: 100%;
   padding: 0 200px;
+  position: relative;
 }
 
 .other-agents h1 {
@@ -267,6 +268,7 @@ header {
 
 .other-agents .agents-container {
   display: grid;
+
   margin: 5%;
   grid-template-columns: repeat(8, 1fr);
   grid-auto-flow: row;
@@ -294,17 +296,17 @@ header {
 
 /* PLAY NOW */
 .play-now {
-  width: 100%;
-  height: 100%;
+  justify-content: center;
+  height: 20vh;
   text-align: center;
 }
 
 .play-now button {
   border: none;
-  padding: 20px 50px;
+  padding: 1rem 3rem;
   transition: all ease-in-out 0.2s;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4vh;
   color: #fff;
   background: linear-gradient(to right, #ff4655 50%, #ce323f 50%);
   background-size: 200% 100%;
@@ -382,7 +384,7 @@ footer a img {
   width: 100px;
 }
 
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1280px) {
   .header-text-container {
     position: absolute;
     color: #fff;
@@ -399,7 +401,7 @@ footer a img {
   }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
   /* NAVBAR */
   .nav-menu {
     position: fixed;
@@ -435,6 +437,11 @@ footer a img {
     display: block;
     cursor: pointer;
     z-index: 100;
+  }
+
+  .hamburger.active {
+    position: fixed;
+    right: 8vh;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -544,30 +551,39 @@ footer a img {
 
   /* OTHER AGENTS */
   .other-agents {
-    height: fit-content;
+    min-height: 100vh;
     width: 100%;
     padding: 0;
   }
 
   .other-agents h1 {
     margin-bottom: 50px;
-    font-size: 5rem;
+    font-size: 7vh;
     padding-left: 20px;
   }
 
   .other-agents .agents-container {
     width: 100%;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(8, 25%);
+    grid-template-rows: repeat(8, 18%);
   }
 
   .other-agents .agents-container img {
-    width: 95%;
+    width: 100%;
+  }
+  .play-now {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+  }
+
+  .play-now button {
+    padding: 1rem 1rem;
   }
 
   footer {
     height: 100vh;
-    padding: 20px;
+    padding: 0 3rem;
     text-align: center;
   }
 }
